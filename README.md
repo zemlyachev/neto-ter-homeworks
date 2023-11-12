@@ -10,7 +10,7 @@
 
 0. [Задания](https://github.com/netology-code/ter-homeworks/tree/main)
 
-1. [~~Ввдение в Terraform~~](01/hw-01.md)
+1. [Ввдение в Terraform](01/hw-01.md)
 
 2. [~~Основы Terraform. Yandex Cloud~~](02/hw-02.md)
 

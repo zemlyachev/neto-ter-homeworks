@@ -39,3 +39,42 @@ variable "vms_ssh_root_key" {
   default     = "<your_ssh_ed25519_key>"
   description = "ssh-keygen -t ed25519"
 }
+
+# vm_web
+variable "vm_web_family" {
+  type        = string
+  default     = "ubuntu-2004-lts"
+  description = "Yandex image family"
+}
+
+variable "vm_web_name" {
+  type        = string
+  default     = "netology-develop-platform-web"
+  description = "VM name"
+}
+
+variable "vm_web_platform_id" {
+  type        = string
+  default     = "standard-v1"
+  description = "VM platform"
+}
+
+variable "vm_web_cores" {
+  type        = number
+  default     = 2
+  description = "VM cores count"
+}
+
+variable "vm_web_memory" {
+  type        = number
+  default     = 1
+  description = "VM memory"
+}
+
+variable "vm_web_core_fraction" {
+  type        = number
+  default     = 5
+  description = "VM core fraction %"
+}
+
+

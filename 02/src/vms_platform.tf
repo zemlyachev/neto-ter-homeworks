@@ -1,14 +1,32 @@
+variable "vm_env" {
+  type        = string
+  default     = "develop"
+  description = "VM environment"
+}
+
+variable "vm_project" {
+  type        = string
+  default     = "platform"
+  description = "VM project type"
+}
+
+variable "vm_role_web" {
+  type        = string
+  default     = "web"
+  description = "VM role web"
+}
+
+variable "vm_role_db" {
+  type        = string
+  default     = "db"
+  description = "VM role db"
+}
+
 # vm_web
 variable "vm_web_family" {
   type        = string
   default     = "ubuntu-2004-lts"
   description = "Yandex image family"
-}
-
-variable "vm_web_name" {
-  type        = string
-  default     = "netology-develop-platform-web"
-  description = "VM name"
 }
 
 variable "vm_web_platform_id" {
@@ -40,12 +58,6 @@ variable "vm_db_family" {
   type        = string
   default     = "ubuntu-2004-lts"
   description = "Yandex image family"
-}
-
-variable "vm_db_name" {
-  type        = string
-  default     = "netology-develop-platform-db"
-  description = "VM name"
 }
 
 variable "vm_db_platform_id" {

@@ -14,7 +14,7 @@ data "yandex_compute_image" "ubuntu" {
 }
 
 resource "yandex_compute_instance" "platform" {
-  name        = var.vm_web_name
+  name        = local.vm_name_platform_web
   platform_id = var.vm_web_platform_id
   resources {
     cores         = var.vm_web_cores
@@ -46,7 +46,7 @@ data "yandex_compute_image" "ubuntu_db" {
 }
 
 resource "yandex_compute_instance" "platform_db" {
-  name        = var.vm_db_name
+  name        = local.vm_name_platform_db
   platform_id = var.vm_db_platform_id
   resources {
     cores         = var.vm_db_cores

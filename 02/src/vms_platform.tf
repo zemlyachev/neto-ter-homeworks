@@ -35,24 +35,6 @@ variable "vm_web_platform_id" {
   description = "VM platform"
 }
 
-variable "vm_web_cores" {
-  type        = number
-  default     = 2
-  description = "VM cores count"
-}
-
-variable "vm_web_memory" {
-  type        = number
-  default     = 1
-  description = "VM memory"
-}
-
-variable "vm_web_core_fraction" {
-  type        = number
-  default     = 5
-  description = "VM core fraction %"
-}
-
 # vm_db
 variable "vm_db_family" {
   type        = string
@@ -66,20 +48,19 @@ variable "vm_db_platform_id" {
   description = "VM platform"
 }
 
-variable "vm_db_cores" {
-  type        = number
-  default     = 2
-  description = "VM cores count"
-}
-
-variable "vm_db_memory" {
-  type        = number
-  default     = 2
-  description = "VM memory"
-}
-
-variable "vm_db_core_fraction" {
-  type        = number
-  default     = 20
-  description = "VM core fraction %"
+variable "vms_resources" {
+  type        = map(map(number))
+  description = "VMs resources"
+  default     = {
+    vm_web_resources = {
+      cores         = 2
+      memory        = 1
+      core_fraction = 5
+    }
+    vm_db_resources = {
+      cores         = 2
+      memory        = 2
+      core_fraction = 20
+    }
+  }
 }

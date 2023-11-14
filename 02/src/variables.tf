@@ -34,10 +34,12 @@ variable "vpc_name" {
 
 ###ssh vars
 
-variable "vms_ssh_root_key" {
-  type        = string
-  default     = "<your_ssh_ed25519_key>"
-  description = "ssh-keygen -t ed25519"
+variable "metadata" {
+  type = object({
+    serial-port-enable = number
+    ssh-keys           = string
+  })
+  description = "VMs metadata (serial por enable, ssh-keygen -t ed25519), filled from personal.auto.tfvars"
 }
 
 

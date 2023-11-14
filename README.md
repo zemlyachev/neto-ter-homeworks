@@ -14,7 +14,7 @@
 
 2. [Основы Terraform. Yandex Cloud](https://github.com/zemlyachev/neto-ter-homeworks/blob/terraform-02/02/hw-02.md)
  
-3. [~~Управляющие конструкции в коде Terraform~~](03/hw-03.md)
+3. [Управляющие конструкции в коде Terraform](https://github.com/zemlyachev/neto-ter-homeworks/blob/terraform-03/03/hw-03.md)
 
 4. [~~Продвинутые методы работы с Terraform~~](04/hw-04.md)
 

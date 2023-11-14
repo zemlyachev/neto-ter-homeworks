@@ -12,7 +12,7 @@
 
 1. [Ввдение в Terraform](01/hw-01.md)
 
-2. [~~Основы Terraform. Yandex Cloud~~](02/hw-02.md)
+2. [Основы Terraform. Yandex Cloud](/zemlyachev/neto-ter-homeworks/blob/terraform-02/02/hw-02.md)
 
 3. [~~Управляющие конструкции в коде Terraform~~](03/hw-03.md)
 

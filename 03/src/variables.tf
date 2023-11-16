@@ -79,3 +79,33 @@ variable "each_vm" {
     { vm_name = "replica", cpu = 4, ram = 4, disk = 20 }
   ]
 }
+
+variable "storage_vm_res" {
+  type = object({
+    vm_name = string
+    cpu     = number
+    ram     = number
+    disk    = number
+  })
+  default = {
+    vm_name = "storage"
+    cpu     = 2
+    ram     = 2
+    disk    = 5
+  }
+}
+
+variable "storage_vm_disk" {
+  type = object({
+    count       = number
+    name_prefix = string
+    type        = string
+    size        = number
+  })
+  default = {
+    count       = 3
+    name_prefix = "disk"
+    type        = "network-hdd"
+    size        = 1
+  }
+}

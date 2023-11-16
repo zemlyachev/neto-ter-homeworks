@@ -30,3 +30,52 @@ variable "vpc_name" {
   default     = "develop"
   description = "VPC network&subnet name"
 }
+
+variable "image_family" {
+  type        = string
+  default     = "ubuntu-2004-lts"
+  description = "Yandex image family"
+}
+
+variable "vm_platform_id" {
+  type        = string
+  default     = "standard-v1"
+  description = "VM platform"
+}
+
+variable "vm_count" {
+  default     = 2
+  type        = number
+  description = "Count of VM"
+}
+
+variable "count_vm_res" {
+  description = "VM parameter"
+  type        = object({
+    cores  = number
+    memory = number
+  })
+  default = {
+    cores  = 2
+    memory = 2
+  }
+}
+
+variable "brand" {
+  type    = string
+  default = "netology"
+}
+
+variable "each_vm" {
+  description = "Each VMs"
+  type        = list(object({
+    vm_name = string
+    cpu     = number
+    ram     = number
+    disk    = number
+  }))
+  default = [
+    { vm_name = "main", cpu = 2, ram = 2, disk = 10 },
+    { vm_name = "replica", cpu = 4, ram = 4, disk = 20 }
+  ]
+}

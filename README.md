@@ -16,7 +16,7 @@
  
 3. [Управляющие конструкции в коде Terraform](https://github.com/zemlyachev/neto-ter-homeworks/blob/terraform-03/03/hw-03.md)
 
-4. [~~Продвинутые методы работы с Terraform~~](04/hw-04.md)
+4. [Продвинутые методы работы с Terraform](https://github.com/zemlyachev/neto-ter-homeworks/blob/terraform-04/04/hw-04.md)
 
 5. [~~Использование Terraform в команде~~](05/hw-05.md)
 

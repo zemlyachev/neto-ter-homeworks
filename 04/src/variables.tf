@@ -53,5 +53,9 @@ variable "vm_db_name" {
   description = "example vm_db_ prefix"
 }
 
+variable "vm_mew_image" {
+  type    = string
+  default = "ubuntu-2004-lts"
+}
 
 
